@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li id="user-links">
+                    <a href="profile.html">Profile</a>
+                    <a href="orders.html">Orders</a>
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>Checkout</h1>
+
+        <div class="checkout-container">
+            <!-- ORDER REVIEW -->
+            <div class="order-review">
+                <h2>Order Review</h2>
+                <div id="order-items">
+                    <!-- Order items loaded dynamically by JavaScript -->
+                </div>
+                <div class="order-total">
+                    <h3>Total: $<span id="order-total">0.00</span></h3>
+                </div>
+            </div>
+
+            <!-- CHECKOUT ACTIONS -->
+            <div class="checkout-actions">
+                <button id="place-order-btn" class="btn btn-primary">Place Order</button>
+                <a href="cart.html" class="btn">Back to Cart</a>
+            </div>
+
+            <!-- MESSAGES -->
+            <div id="success-message" class="success-message" style="display: none;"></div>
+            <div id="error-message" class="error-message" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="common.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

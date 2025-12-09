@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li id="auth-links">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </li>
+                <li id="user-links" style="display: none;">
+                    <a href="profile.html">Profile</a>
+                    <a href="orders.html">Orders</a>
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>Products</h1>
+        
+        <!-- SEARCH SECTION -->
+        <div class="search-section">
+            <input type="text" id="search-input" placeholder="Search products..." class="search-input">
+            <button id="search-btn" class="btn">Search</button>
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div id="products-container" class="product-grid">
+            <!-- Products loaded dynamically by JavaScript -->
+        </div>
+
+        <!-- NO PRODUCTS MESSAGE -->
+        <div id="no-products" style="display: none;" class="no-products">
+            <p>No products found.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="common.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

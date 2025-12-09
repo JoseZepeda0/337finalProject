@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="form-container">
+            <h2>Register</h2>
+            <!-- REGISTRATION FORM -->
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address (Optional)</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+                <!-- ERROR AND SUCCESS MESSAGES -->
+                <div id="error-message" class="error-message"></div>
+                <div id="success-message" class="success-message"></div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+            <p class="form-footer">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="register.js"></script>
+</body>
+</html>

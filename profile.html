@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                    <a href="orders.html">Orders</a>
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>My Profile</h1>
+
+        <div class="form-container">
+            <!-- PROFILE INFORMATION DISPLAY -->
+            <div id="profile-info">
+                <!-- Profile info loaded dynamically by JavaScript -->
+            </div>
+
+            <!-- PROFILE EDIT FORM (hidden by default) -->
+            <form id="profile-form" style="display: none;">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+                <div id="success-message" class="success-message"></div>
+                <div id="error-message" class="error-message"></div>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="button" id="cancel-btn" class="btn">Cancel</button>
+            </form>
+
+            <!-- EDIT BUTTON -->
+            <button id="edit-btn" class="btn btn-primary">Edit Profile</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="common.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

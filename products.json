@@ -1,0 +1,29 @@
+[
+  {
+    "id": "prod001",
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with 2.4GHz connectivity",
+    "price": 29.99,
+    "stock": 50,
+    "category": "Electronics",
+    "imageUrl": "/images/mouse.jpg"
+  },
+  {
+    "id": "prod002",
+    "name": "Mechanical Keyboard",
+    "description": "RGB mechanical keyboard with blue switches",
+    "price": 89.99,
+    "stock": 30,
+    "category": "Electronics",
+    "imageUrl": "/images/keyboard.jpg"
+  },
+  {
+    "id": "prod003",
+    "name": "USB-C Cable",
+    "description": "Fast charging USB-C cable, 6ft length",
+    "price": 12.99,
+    "stock": 100,
+    "category": "Accessories",
+    "imageUrl": "/images/cable.jpg"
+  }
+]

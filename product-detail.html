@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li id="auth-links">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </li>
+                <li id="user-links" style="display: none;">
+                    <a href="profile.html">Profile</a>
+                    <a href="orders.html">Orders</a>
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <!-- PRODUCT DETAIL CONTAINER -->
+        <div id="product-detail" class="product-detail">
+            <!-- Product details loaded dynamically by JavaScript -->
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="common.js"></script>
+    <script src="product-detail.js"></script>
+</body>
+</html>

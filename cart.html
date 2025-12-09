@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TechStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li id="auth-links">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </li>
+                <li id="user-links" style="display: none;">
+                    <a href="profile.html">Profile</a>
+                    <a href="orders.html">Orders</a>
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <!-- CART ITEMS CONTAINER -->
+        <div id="cart-items">
+            <!-- Cart items loaded dynamically by JavaScript -->
+        </div>
+
+        <!-- EMPTY CART MESSAGE -->
+        <div id="empty-cart" style="display: none;" class="empty-cart">
+            <p>Your cart is empty.</p>
+            <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+        </div>
+
+        <!-- CART SUMMARY -->
+        <div id="cart-summary" style="display: none;" class="cart-summary">
+            <h3>Order Summary</h3>
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p class="total-price">Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn" class="btn btn-primary">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="common.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
