@@ -4,9 +4,9 @@
     "name": "Wireless Mouse",
     "description": "Ergonomic wireless mouse with 2.4GHz connectivity",
     "price": 29.99,
-    "stock": 50,
+    "stock": 39,
     "category": "Electronics",
-    "imageUrl": "/images/mouse.jpg"
+    "imageUrl": "mouse.jpg"
   },
   {
     "id": "prod002",
@@ -15,7 +15,7 @@
     "price": 89.99,
     "stock": 30,
     "category": "Electronics",
-    "imageUrl": "/images/keyboard.jpg"
+    "imageUrl": "keyboard.jpg"
   },
   {
     "id": "prod003",
@@ -24,6 +24,6 @@
     "price": 12.99,
     "stock": 100,
     "category": "Accessories",
-    "imageUrl": "/images/cable.jpg"
+    "imageUrl": "cable.jpg"
   }
 ]

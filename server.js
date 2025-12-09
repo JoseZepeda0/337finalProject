@@ -12,7 +12,8 @@ const PORT = 8080;
 // ============================================================
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('.')); // Serve all files from current directory
+// app.use(express.static('.')); // Serve all files from current directory
+app.use(express.static(__dirname));
 app.use(session({
     secret: 'ecommerce-secret-key-2024',
     resave: false,
@@ -234,7 +235,7 @@ app.get('/api/products/search/:query', (req, res) => {
 
 // Add new product (requires authentication)
 app.post('/api/products', requireAuth, (req, res) => {
-    const { name, description, price, stock, category, imageUrl } = req.body;
+    const { name, description, price, stock, category, imageUrll } = req.body;
     
     // Validate required fields
     if (!name || !price || stock === undefined) {
@@ -251,7 +252,7 @@ app.post('/api/products', requireAuth, (req, res) => {
         price: parseFloat(price),
         stock: parseInt(stock),
         category: category || 'General',
-        imageUrl: imageUrl || 'default.jpg',
+        imageUrl: imageUrll || 'default.jpg',
         createdAt: new Date().toISOString()
     };
     
