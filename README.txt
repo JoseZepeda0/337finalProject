@@ -2,6 +2,10 @@
 TechStore E-Commerce Platform
 ================================
 
+Authors:
+Jose Zepeda
+Jonatan Zavala
+
 OVERVIEW
 --------
 Complete e-commerce web application with user authentication, product browsing,

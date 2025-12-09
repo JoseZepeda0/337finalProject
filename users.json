@@ -7,5 +7,14 @@
     "address": "j",
     "role": "buyer",
     "createdAt": "2025-12-09T18:03:36.361Z"
+  },
+  {
+    "id": "user17653051560136jrw5530p",
+    "username": "a",
+    "password": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+    "email": "a@a.a",
+    "address": "a",
+    "role": "buyer",
+    "createdAt": "2025-12-09T18:32:36.013Z"
   }
 ]
